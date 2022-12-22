@@ -1,0 +1,14 @@
+replicas: 2
+
+frontend:
+  image: myregistry/frontend:latest
+  port: 80
+  path: frontend
+
+backend:
+  image: myregistry/backend:latest
+  port: 8080
+  path: backend
+
+ingress:
+  hostname: myapp.domain.com
